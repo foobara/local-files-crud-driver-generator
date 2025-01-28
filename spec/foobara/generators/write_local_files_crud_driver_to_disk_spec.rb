@@ -43,7 +43,7 @@ RSpec.describe Foobara::Generators::LocalFilesCrudDriverGenerator::WriteLocalFil
 
       expect(
         command.paths_to_source_code["Gemfile"]
-      ).to include('gem "foobara-local-files-crud-driver", github: "foobara/local-files-crud-driver"')
+      ).to include('gem "foobara-local-files-crud-driver"')
     end
   end
 

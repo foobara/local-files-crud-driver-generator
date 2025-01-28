@@ -21,7 +21,8 @@ module Foobara
             match = gemfile_contents.match(/^gem /)
 
             if match
-              new_entry = 'gem "foobara-local-files-crud-driver", github: "foobara/local-files-crud-driver"'
+              # TODO: move this to .gemspec?
+              new_entry = 'gem "foobara-local-files-crud-driver"'
               "#{match.pre_match}\n#{new_entry}\n#{match}#{match.post_match}"
             else
               # TODO: maybe print a warning and return the original Gemfile
